@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UMAttachmentCollectionCell" id="mHa-Ol-I2H" customClass="UMAttachmentCollectionCell" customModule="PPUser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nb7-ph-g32">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    </imageView>
+                    <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHN-pO-gdy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCf-y5-uM0">
+                        <rect key="frame" x="146.5" y="152.5" width="82" height="70"/>
+                        <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                        <state key="normal" image="btn_prpage_play"/>
+                        <connections>
+                            <action selector="onPlay:" destination="mHa-Ol-I2H" eventType="touchUpInside" id="Mkx-fC-Zn6"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Nb7-ph-g32" firstAttribute="top" secondItem="mHa-Ol-I2H" secondAttribute="top" id="26N-Fp-Uea"/>
+                <constraint firstItem="gHN-pO-gdy" firstAttribute="top" secondItem="mHa-Ol-I2H" secondAttribute="top" id="EC5-sm-wx3"/>
+                <constraint firstItem="gHN-pO-gdy" firstAttribute="leading" secondItem="mHa-Ol-I2H" secondAttribute="leading" id="KcC-1a-VGu"/>
+                <constraint firstAttribute="bottom" secondItem="gHN-pO-gdy" secondAttribute="bottom" id="N7f-Zj-Bqy"/>
+                <constraint firstAttribute="trailing" secondItem="Nb7-ph-g32" secondAttribute="trailing" id="Rzn-Ra-fzj"/>
+                <constraint firstAttribute="bottom" secondItem="Nb7-ph-g32" secondAttribute="bottom" id="SWx-Be-1Bd"/>
+                <constraint firstItem="Nb7-ph-g32" firstAttribute="leading" secondItem="mHa-Ol-I2H" secondAttribute="leading" id="WJK-n6-vdC"/>
+                <constraint firstAttribute="trailing" secondItem="gHN-pO-gdy" secondAttribute="trailing" id="ciQ-ke-ay3"/>
+                <constraint firstItem="fCf-y5-uM0" firstAttribute="centerX" secondItem="fyM-xO-nNM" secondAttribute="centerX" id="tdr-ke-J21"/>
+                <constraint firstItem="fCf-y5-uM0" firstAttribute="centerY" secondItem="fyM-xO-nNM" secondAttribute="centerY" id="tun-eI-07C"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fyM-xO-nNM"/>
+            <size key="customSize" width="251" height="217"/>
+            <connections>
+                <outlet property="imageView" destination="Nb7-ph-g32" id="2bk-Tv-SAh"/>
+                <outlet property="lcPlayCenterY" destination="tun-eI-07C" id="REm-lx-YJp"/>
+                <outlet property="overlayView" destination="gHN-pO-gdy" id="U9z-o4-K29"/>
+                <outlet property="playButton" destination="fCf-y5-uM0" id="IRK-pC-NGr"/>
+            </connections>
+            <point key="canvasLocation" x="-5.5" y="-66.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_prpage_play" width="42" height="30"/>
+    </resources>
+</document>

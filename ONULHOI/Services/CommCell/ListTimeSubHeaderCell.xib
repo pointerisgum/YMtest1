@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListTimeSubHeaderCell" id="KGk-i7-Jjw" customClass="ListTimeSubHeaderCell" customModule="ONULHOI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUM-mu-oUH" customClass="UIBView" customModule="ONULHOI" customModuleProvider="target">
+                        <rect key="frame" x="20" y="0.0" width="280" height="36"/>
+                        <subviews>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ths-0n-quR">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icMorningS" translatesAutoresizingMaskIntoConstraints="NO" id="PgG-TH-TZ0">
+                                <rect key="frame" x="12" y="10" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="CGN-4O-0nf"/>
+                                    <constraint firstAttribute="height" constant="16" id="jeE-Lg-35T"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOm-CC-JtW">
+                                <rect key="frame" x="33" y="9.5" width="31" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.6470588235294118" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="37건" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyO-t1-GIs">
+                                <rect key="frame" x="238" y="9.5" width="30" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PgG-TH-TZ0" firstAttribute="leading" secondItem="gUM-mu-oUH" secondAttribute="leading" constant="12" id="5W4-q1-C6G"/>
+                            <constraint firstAttribute="height" constant="36" id="7za-Vs-987"/>
+                            <constraint firstItem="kyO-t1-GIs" firstAttribute="centerY" secondItem="PgG-TH-TZ0" secondAttribute="centerY" id="8Gv-5g-bae"/>
+                            <constraint firstItem="fOm-CC-JtW" firstAttribute="leading" secondItem="PgG-TH-TZ0" secondAttribute="trailing" constant="5" id="JxO-fD-5FS"/>
+                            <constraint firstAttribute="trailing" secondItem="ths-0n-quR" secondAttribute="trailing" id="K3y-L6-IMh"/>
+                            <constraint firstItem="ths-0n-quR" firstAttribute="leading" secondItem="gUM-mu-oUH" secondAttribute="leading" id="Mmf-Ln-yhP"/>
+                            <constraint firstItem="fOm-CC-JtW" firstAttribute="centerY" secondItem="PgG-TH-TZ0" secondAttribute="centerY" id="SNi-UD-Lgk"/>
+                            <constraint firstItem="ths-0n-quR" firstAttribute="top" secondItem="gUM-mu-oUH" secondAttribute="top" id="UxD-vI-0JE"/>
+                            <constraint firstAttribute="bottom" secondItem="ths-0n-quR" secondAttribute="bottom" id="bQE-Q5-vM4"/>
+                            <constraint firstAttribute="trailing" secondItem="kyO-t1-GIs" secondAttribute="trailing" constant="12" id="jOH-8c-5ai"/>
+                            <constraint firstItem="PgG-TH-TZ0" firstAttribute="centerY" secondItem="gUM-mu-oUH" secondAttribute="centerY" id="obB-gD-zXo"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="gUM-mu-oUH" secondAttribute="bottom" id="FwQ-lk-lM7"/>
+                    <constraint firstItem="gUM-mu-oUH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="RdE-aO-h6M"/>
+                    <constraint firstItem="gUM-mu-oUH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UDn-i0-abk"/>
+                    <constraint firstAttribute="trailing" secondItem="gUM-mu-oUH" secondAttribute="trailing" constant="20" id="XNd-AS-uAn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="iv_Icon" destination="PgG-TH-TZ0" id="iGg-cU-and"/>
+                <outlet property="lb_Count" destination="kyO-t1-GIs" id="cgn-bS-Moh"/>
+                <outlet property="lb_Title" destination="fOm-CC-JtW" id="kWE-V6-kEF"/>
+                <outlet property="v_Bg" destination="ths-0n-quR" id="8wx-uG-DbO"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="121"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icMorningS" width="16" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

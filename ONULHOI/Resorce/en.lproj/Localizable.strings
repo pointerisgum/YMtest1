@@ -1,0 +1,39 @@
+/* 
+  Localizable.strings
+  ONULHOI
+
+  Created by 김영민 on 2021/12/30.
+  
+*/
+
+"comm.cancel" = "취소";
+"comm.confirm" = "확인";
+"comm.yes" = "네";
+"comm.no" = "아니요";
+"comm.next" = "다음";
+"comm.finish" = "종료";
+"comm.setting" = "설정";
+"comm.delete" = "삭제";
+"comm.won" = "원";
+"comm.all" = "전체";
+"comm.today" = "오늘";
+
+"restApi.code.generalError" = "이용에 불편을 드려 죄송합니다.\n잠시후 다시 이용해 주세요.";
+"restApi.code.notConnected" = "네트워크에 연결되어 있지 않습니다.\n\n네트워크 연결 상태 확인 후,\n다시 시도해주세요.";
+
+
+"login.getTempPw" = "임시비밀번호 받기";
+"login.sendTempPw" = "임시비밀번호를 발송해드렸습니다.";
+"login.changePw" = "비밀번호 변경";
+"login.pwHint" = "영문, 숫자를 포함하여 6자~15자";
+"login.changeSuccess" = "변경완료";
+
+"validate.loginId.empty" = "아이디를 입력해주세요.";
+"validate.tempPwd.empty" = "임시 비밀번호를 입력해 주세요..";
+"validate.pwd.empty" = "비밀번호를 입력해 주세요.";
+"validate.pwd.invalid" = "유효하지 않은 비밀번호 입니다.";
+"validate.newPwd.empty" = "새로운 비밀번호를 입력해 주세요.";
+"validate.newPwd.invalid" = "유효하지 않은 비밀번호 입니다.";
+"validate.confirmPwd.empty" = "새로운 비밀번호를 한번 더 입력해 주세요.";
+"validate.confirmPwd.notMatch" = "비밀번호가 서로 다릅니다.";
+

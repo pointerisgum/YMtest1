@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UMInputBar" customModule="ONULHOI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldp-Zx-cuf" customClass="UIBButton" customModule="ONULHOI" customModuleProvider="target">
+                    <rect key="frame" x="20" y="0.0" width="335" height="52"/>
+                    <color key="backgroundColor" name="#18a0fb"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="임시비밀번호 받기">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="goSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="Rc2-39-BRe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wNS-EE-IsU"/>
+            <constraints>
+                <constraint firstItem="wNS-EE-IsU" firstAttribute="trailing" secondItem="Ldp-Zx-cuf" secondAttribute="trailing" constant="20" id="1ta-SO-NJU"/>
+                <constraint firstAttribute="bottom" secondItem="Ldp-Zx-cuf" secondAttribute="bottom" constant="20" id="6fM-xv-Ajq"/>
+                <constraint firstItem="Ldp-Zx-cuf" firstAttribute="leading" secondItem="wNS-EE-IsU" secondAttribute="leading" constant="20" id="bvc-qW-uAN"/>
+                <constraint firstItem="Ldp-Zx-cuf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jCt-y3-zvp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn" destination="Ldp-Zx-cuf" id="oGW-ex-uCr"/>
+            </connections>
+            <point key="canvasLocation" x="32.799999999999997" y="53.073463268365821"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Ldp-Zx-cuf">
+            <size key="intrinsicContentSize" width="115" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="#18a0fb">
+            <color red="0.093999996781349182" green="0.62699997425079346" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
